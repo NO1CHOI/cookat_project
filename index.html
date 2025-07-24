@@ -3,9 +3,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Cookat</title>
+    <!-- 웹폰트 -->
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css" />
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/common.css">
+    <link rel="stylesheet" href="./styles/main.css">
+    <!-- 스크립트 -->
+    <script src="./scripts/header.js" defer></script>
+    <script src="./scripts/main.js" defer></script>
 </head>
 <body>
-    
+    <header>
+        <div class="header_top">
+            <h1><a href="#"><img src="./images/cookat_logo.png" alt="쿠캣로고"></a></h1>
+            <div class="search">
+                <input type="text" id="search_box" placeholder="오늘 뭐 먹지?">
+                <button type="button" id="submit"></button> <!-- 돋보기 백그라운드처리 -->
+            </div>
+            <div class="user">
+                <a href="#" class="login">
+                    <img src="./images/icon/enter.png" alt="로그인">
+                    <span>로그인</span>
+                </a>
+                <a href="#" class="mypage">
+                    <img src="./images/icon/wewew.png" alt="마이페이지">
+                    <span>마이페이지</span>
+                </a>
+                <a href="#" class="cart">
+                    <img src="./images/icon/shopping-bag.png" alt="장바구니">
+                    <span>장바구니</span>
+                </a>
+            </div>
+        </div>
+        <nav>
+            <ul class="gnb">
+                <li>
+                    <a href="#">
+                        <img src="./images/icon/category.png" alt="메뉴">
+                        <span>전체 카테고리</span>
+                    </a>
+                    <ul class="lnb">
+                        <li><a href="#">국 / 탕 / 찌개 / 전골</a></li>
+                        <li><a href="#">구이 / 볶음 / 찜</a></li>
+                        <li><a href="#">정육 / 수산 / 과일</a></li>
+                        <li><a href="#">만두 / 분식 / 튀김</a></li>
+                        <li><a href="#">밥 / 도시락 / 면</a></li>
+                        <li><a href="#">반찬 / 소스</a></li>
+                        <li><a href="#">베이커리 / 디저트</a></li>
+                        <li><a href="#">식단 / 건강식품</a></li>
+                        <li><a href="#">선물세트</a></li>
+                        <li><a href="#">홈 / 리빙</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">신제품</a></li>
+                <li><a href="#">베스트</a></li>
+                <li><a href="#">할인중</a></li>
+                <li><a href="#">이벤트</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="bnr"></section>
+        <section id="best"></section>
+        <section id="ranking"></section>
+        <section id="time_sale"></section>
+        <section id="video"></section>
+        <section id="category1"></section>
+        <section id="subbnr"></section>
+    </main>
+    <footer>
+        <div class="footer_top">
+            <div class="center_info">
+                <p class="title">쿠캣 고객센터</p>
+                <p>평일 10:00 - 18:00 (점심시간 12:30 - 13:30)</p>
+                <p>토요일 09:30 - 13:00</p>
+                <p>일요일/공휴일 휴무</p>
+            </div>
+            <div class="center">
+                <a href="#">고객센터</a>
+            </div>
+        </div>
+        <div class="footer_btm">
+            <div class="clause">
+                <a href="#">이용약관</a>
+                <a href="#">개인정보 처리방침</a>
+                <a href="#">사업자 할인몰</a>
+                <a href="#">입점문의</a>
+                <a href="#">고객센터</a>
+            </div>
+            <div class="sns">
+                <a href="#"><img src="./images/icon/facebook.png" alt="facebook"></a>
+                <a href="#"><img src="./images/icon/apple 1.png" alt="iphone"></a>
+                <a href="#"><img src="./images/icon/naver 1.png" alt="naver"></a>
+                <a href="#"><img src="./images/icon/kakao 1.png" alt="kakao"></a>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

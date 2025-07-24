@@ -1,0 +1,104 @@
+/* 
+12px = 0.75rem
+18px = 1.125rem
+#D9D9D9
+#FF5833
+
+*/
+
+
+/* header */
+header {}
+header .header_top {
+    height: 108px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+header .header_top h1 {width: 160px;}
+header .header_top h1 a {}
+header .header_top h1 a img {width: 100%;}
+header .header_top .search {position:relative;}
+header .header_top .search #search_box {
+    /* background-color: turquoise; */
+    width: 330px;
+    height:40px;
+    padding:0 28.5px;
+    font-size:0.75rem;
+    border: 1px solid #D9D9D9;
+    border-radius: 50px;
+}
+header .header_top .search #submit {
+    display: block;
+    width: 20px; height: 20px;
+    position:absolute;
+    right:15px; top:25%;
+    background-image: url(../images/icon/ic-search-finder.png);
+    background-size: cover;
+}
+header .header_top .user {
+    display: flex;
+    gap:30px;
+}
+header .header_top .user a {
+    /* background-color: lightgoldenrodyellow; */
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+header .header_top .user a img {width: 25px; height: 25px;}
+header .header_top .user a span {font-size: 0.75rem;padding-top:5px;}
+header .header_top .user .login {}
+header .header_top .user .mypage {}
+header .header_top .user .cart {}
+header nav {/* background-color: lightcoral; */}
+header nav .gnb {
+    display:flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    gap:50px;
+    justify-content: left;
+    padding: 10px 10%;
+}
+header nav .gnb li {position:relative;}
+header nav .gnb li a {
+    font-size:1.125rem; font-weight: 600;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    gap:6px;
+    color:#222;
+}
+header nav .gnb li a img {width:20px; height: 20px;}
+header nav .gnb li a span {font-size:1.125rem; font-weight: 600; margin-top: 2px;color:#222;}
+header nav .gnb li .lnb {
+    background-color:#fff;
+    border: 1px solid #D9D9D9;
+    position: absolute;
+    top:30px; left:0;
+    display: flex;
+    flex-flow: column nowrap;
+    gap:35px;
+    padding:30px 20px;
+    width: 190px;
+    /* 초기설정 */
+    display:none;
+}
+header nav .gnb li:nth-child(1):hover .lnb {display: flex;}
+header nav .gnb li .lnb li {}
+header nav .gnb li .lnb li a {font-size: 1rem;}
+/* footer */
+footer {background-color: wheat;}
+footer .footer_top {}
+footer .footer_top .center_info {}
+footer .footer_top .center_info p {}
+footer .footer_top .center_info .title {}
+footer .footer_top .center {}
+footer .footer_top .center a {}
+footer .footer_btm {}
+footer .footer_btm .clause {}
+footer .footer_btm .clause a {}
+footer .footer_btm .sns {}
+footer .footer_btm .sns a {}
+footer .footer_btm .sns a img {}

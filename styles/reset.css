@@ -54,6 +54,7 @@ em,strong,sub,sup,br,span,del,s,q,mark,code,img,a {
     font-family: 'Pretendard',sans-serif;
     font-style: normal;
 	box-sizing: border-box;
+	
 }
 
 /* 개별태그 초기값 */
