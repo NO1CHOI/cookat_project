@@ -1,0 +1,68 @@
+
+main {}
+/* main ============================= bnr */
+main #bnr {
+    width: 100%;
+    overflow: hidden;
+}
+main #bnr .bnr_container {
+    width: 1920px;
+    margin:53px auto;
+    position: relative;
+}
+main #bnr .bnr_container #bnr_swiper {}
+main #bnr .bnr_container #bnr_swiper .swiper-wrapper {}
+main #bnr .bnr_container #bnr_swiper .swiper-wrapper .swiper-slide {
+    height: 500px;
+    width: 650px;
+    background-size: cover;
+}
+main #bnr .bnr_container #bnr_swiper .swiper-wrapper .slide1 {background-image: url(../images/bnr1.jpg);}
+main #bnr .bnr_container #bnr_swiper .swiper-wrapper .slide2 {background-image: url(../images/bnr2.jpg);}
+main #bnr .bnr_container #bnr_swiper .swiper-wrapper .slide3 {background-image: url(../images/bnr3.jpg);}
+main #bnr .bnr_container #bnr_swiper .swiper-wrapper .slide4 {background-image: url(../images/bnr4.jpg);}
+main #bnr .bnr_container #bnr_swiper .swiper-wrapper .slide5 {background-image: url(../images/bnr5.jpg);}
+main #bnr .bnr_container #bnr_swiper .swiper-wrapper .slide6 {background-image: url(../images/bnr6.jpg);}
+main #bnr .bnr_container .swiper-button-prev {
+    background-image: url(../images/icon/arrow.png);
+    background-position: center;
+    background-size: cover;
+    transform: rotate(270deg);
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top:532px; left:1530px;
+    z-index: 10;
+    /* background-color: red; */
+}
+main #bnr .bnr_container .swiper-button-prev::after {display: none;}
+main #bnr .bnr_container .swiper-button-next {
+    /* background-color: aqua; */
+    background-image: url(../images/icon/arrow.png);
+    background-position: center;
+    background-size: cover;
+    transform: rotate(90deg);
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top:532px; right:250px;
+    z-index: 10;
+}
+main #bnr .bnr_container .swiper-button-next::after {display: none;}
+main #bnr .bnr_container #bnr_scrollbar {
+    position: absolute;
+    bottom:-29px; left:100px;
+    width:1300px;
+}
+main #bnr .bnr_container #bnr_pagination {
+    color:#686868;
+    position:absolute;
+    top:518px; left:640px;
+}
+main #bnr .bnr_container #bnr_pagination span {color:#686868;}
+/* main ============================= best */
+/* main ============================= ranking */
+/* main ============================= time_sale */
+/* main ============================= video */
+/* main ============================= category1 */
+/* main ============================= subbnr */
