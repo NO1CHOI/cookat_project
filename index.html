@@ -70,32 +70,1188 @@
         </nav>
     </header>
     <main>
-        <section id="bnr">
-            <div class="bnr_container">
-                <div class="swiper" id="bnr_swiper">
-                    <!--필수-->
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide slide1"></div>
-                        <div class="swiper-slide slide2"></div>
-                        <div class="swiper-slide slide3"></div>
-                        <div class="swiper-slide slide4"></div>
-                        <div class="swiper-slide slide5"></div>
-                        <div class="swiper-slide slide6"></div>
+        <div class="contents_wrap">
+            <!-- 메인배너 -->
+            <section id="bnr">
+                <div class="bnr_container">
+                    <div class="swiper" id="bnr_swiper">
+                        <!--필수-->
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide slide1"></div>
+                            <div class="swiper-slide slide2"></div>
+                            <div class="swiper-slide slide3"></div>
+                            <div class="swiper-slide slide4"></div>
+                            <div class="swiper-slide slide5"></div>
+                            <div class="swiper-slide slide6"></div>
+                        </div>
+                    </div>
+                    <!--필요 시 사용(선택)-->
+                    <div class="swiper-pagination" id="bnr_pagination"></div>
+                    <div class="swiper-button-prev" id="left_btn"></div>
+                    <div class="swiper-button-next" id="right_btn"></div>
+                    <div class="swiper-scrollbar" id="bnr_scrollbar"></div>
+                </div>
+            </section>
+            <!-- 베스트상품 모아두기 -->
+            <section id="best">
+                <div class="best_category">
+                    <ul class="best_mainitem">
+                        <li><a href="#"><img src="./images/icon/ranking_b.png" alt="지금핫한"></a></li>
+                        <li><a href="#"><img src="./images/icon/cart.png" alt="재구매 많은"></a></li>
+                        <li><a href="#"><img src="./images/icon/price.png" alt="금액대별"></a></li>
+                        <li><a href="#"><img src="./images/icon/reward.png" alt="명예의전당ㄴ"></a></li>
+                    </ul>
+                    <div class="best_sub">
+                        <!-- 지금 핫한 -->
+                        <div class="sub_item item1">
+                            <div class="swiper" id="best_hot">
+                                <!--필수-->
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide slide1">
+                                        <div id="cart"><a href="#"><img src="./images/icon/cart2.png" alt="쇼핑카트"></a></div>
+                                        <div class="item_wrap">
+                                            <div class="thum"><a href="#"><img src="./images/item/best/best_thum01.jpg" alt="썸네일"></a></div>
+                                            <div class="item_detail">
+                                                <a href="#">
+                                                    <p class="title">원팩쿠캣 쭈꾸미 볶음 2종</p>
+                                                    <p class="contents">전자레인지 4분 30초면 요리 끝!</p>
+                                                    <p class="price">6,900원</p>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide slide2">
+                                        <div id="cart"><a href="#"><img src="./images/icon/cart2.png" alt="쇼핑카트"></a></div>
+                                        <div class="item_wrap">
+                                            <div class="thum"><a href="#"><img src="./images/item/best/best_thum02.jpg" alt="썸네일"></a></div>
+                                            <div class="item_detail">
+                                                <a href="#">
+                                                    <p class="title">렌지쿠캣 오픈 닭구이 3종</p>
+                                                    <p class="contents">3분이면 배달 치킨의 맛이 뚝딱</p>
+                                                    <p class="price">6,900원</p>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide slide3">
+                                        <div id="cart"><a href="#"><img src="./images/icon/cart2.png" alt="쇼핑카트"></a></div>
+                                        <div class="item_wrap">
+                                            <div class="thum"><a href="#"><img src="./images/item/best/best_thum03.jpg" alt="썸네일"></a></div>
+                                            <div class="item_detail">
+                                                <a href="#">
+                                                    <p class="title">바로쿠캣 밥도둑 5종(깐새우장 / 순살게장)</p>
+                                                    <p class="contents">이거 하나면 밥 한 공기 순삭</p>
+                                                    <p class="price">12,900원</p>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide slide4">
+                                        <div id="cart"><a href="#"><img src="./images/icon/cart2.png" alt="쇼핑카트"></a></div>
+                                        <div class="item_wrap">
+                                            <div class="thum"><a href="#"><img src="./images/item/best/best_thum04.jpg" alt="썸네일"></a></div>
+                                            <div class="item_detail">
+                                                <a href="#">
+                                                    <p class="title">원팩쿠캣 쭈꾸미 볶음 2종</p>
+                                                    <p class="contents">전자레인지 4분 30초면 요리 끝!</p>
+                                                    <p class="price">6,900원</p>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide slide5">
+                                        <div id="cart"><a href="#"><img src="./images/icon/cart2.png" alt="쇼핑카트"></a></div>
+                                        <div class="item_wrap">
+                                            <div class="thum"><a href="#"><img src="./images/item/best/best_thum05.jpg" alt="썸네일"></a></div>
+                                            <div class="item_detail">
+                                                <a href="#">
+                                                    <p class="title">렌지쿠캣 오픈 닭구이 3종</p>
+                                                    <p class="contents">3분이면 배달 치킨의 맛이 뚝딱</p>
+                                                    <p class="price">6,900원</p>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide slide6">
+                                        <div id="cart"><a href="#"><img src="./images/icon/cart2.png" alt="쇼핑카트"></a></div>
+                                        <div class="item_wrap">
+                                            <div class="thum"><a href="#"><img src="./images/item/best/best_thum06.jpg" alt="썸네일"></a></div>
+                                            <div class="item_detail">
+                                                <a href="#">
+                                                    <p class="title">바로쿠캣 밥도둑 5종(깐새우장 / 순살게장)</p>
+                                                    <p class="contents">이거 하나면 밥 한 공기 순삭</p>
+                                                    <p class="price">12,900원</p>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-button-prev"></div>
+                                <div class="swiper-button-next"></div>
+                                <div class="swiper-scrollbar"></div>
+                            </div>
+                        </div>
+                        <!-- 재구매가 많은 -->
+                        <div class="sub_item item2">
+                            <div class="swiper" id="best_repurchase">
+                                <!--필수-->
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide slide1">
+                                        <div id="cart"><a href="#"><img src="./images/icon/cart2.png" alt="쇼핑카트"></a></div>
+                                        <div class="item_wrap">
+                                            <div class="thum"><a href="#"><img src="./images/item/best/best_thum01.jpg" alt="썸네일"></a></div>
+                                            <div class="item_detail">
+                                                <a href="#">
+                                                    <p class="title">원팩쿠캣 쭈꾸미 볶음 2종</p>
+                                                    <p class="contents">전자레인지 4분 30초면 요리 끝!</p>
+                                                    <p class="price">6,900원</p>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide slide2">
+                                        <div id="cart"><a href="#"><img src="./images/icon/cart2.png" alt="쇼핑카트"></a></div>
+                                        <div class="item_wrap">
+                                            <div class="thum"><a href="#"><img src="./images/item/best/best_thum02.jpg" alt="썸네일"></a></div>
+                                            <div class="item_detail">
+                                                <a href="#">
+                                                    <p class="title">렌지쿠캣 오픈 닭구이 3종</p>
+                                                    <p class="contents">3분이면 배달 치킨의 맛이 뚝딱</p>
+                                                    <p class="price">6,900원</p>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide slide3">
+                                        <div id="cart"><a href="#"><img src="./images/icon/cart2.png" alt="쇼핑카트"></a></div>
+                                        <div class="item_wrap">
+                                            <div class="thum"><a href="#"><img src="./images/item/best/best_thum03.jpg" alt="썸네일"></a></div>
+                                            <div class="item_detail">
+                                                <a href="#">
+                                                    <p class="title">바로쿠캣 밥도둑 5종(깐새우장 / 순살게장)</p>
+                                                    <p class="contents">이거 하나면 밥 한 공기 순삭</p>
+                                                    <p class="price">12,900원</p>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide slide4">
+                                        <div id="cart"><a href="#"><img src="./images/icon/cart2.png" alt="쇼핑카트"></a></div>
+                                        <div class="item_wrap">
+                                            <div class="thum"><a href="#"><img src="./images/item/best/best_thum04.jpg" alt="썸네일"></a></div>
+                                            <div class="item_detail">
+                                                <a href="#">
+                                                    <p class="title">원팩쿠캣 쭈꾸미 볶음 2종</p>
+                                                    <p class="contents">전자레인지 4분 30초면 요리 끝!</p>
+                                                    <p class="price">6,900원</p>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide slide5">
+                                        <div id="cart"><a href="#"><img src="./images/icon/cart2.png" alt="쇼핑카트"></a></div>
+                                        <div class="item_wrap">
+                                            <div class="thum"><a href="#"><img src="./images/item/best/best_thum05.jpg" alt="썸네일"></a></div>
+                                            <div class="item_detail">
+                                                <a href="#">
+                                                    <p class="title">렌지쿠캣 오픈 닭구이 3종</p>
+                                                    <p class="contents">3분이면 배달 치킨의 맛이 뚝딱</p>
+                                                    <p class="price">6,900원</p>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide slide6">
+                                        <div id="cart"><a href="#"><img src="./images/icon/cart2.png" alt="쇼핑카트"></a></div>
+                                        <div class="item_wrap">
+                                            <div class="thum"><a href="#"><img src="./images/item/best/best_thum06.jpg" alt="썸네일"></a></div>
+                                            <div class="item_detail">
+                                                <a href="#">
+                                                    <p class="title">바로쿠캣 밥도둑 5종(깐새우장 / 순살게장)</p>
+                                                    <p class="contents">이거 하나면 밥 한 공기 순삭</p>
+                                                    <p class="price">12,900원</p>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-button-prev"></div>
+                                <div class="swiper-button-next"></div>
+                                <div class="swiper-scrollbar"></div>
+                            </div>
+                        </div>
+                        <!-- 금액대별 -->
+                        <div class="sub_item item3">
+                            <div class="swiper" id="best_sum">
+                                <!--필수-->
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide slide1">
+                                        <div id="cart"><a href="#"><img src="./images/icon/cart2.png" alt="쇼핑카트"></a></div>
+                                        <div class="item_wrap">
+                                            <div class="thum"><a href="#"><img src="./images/item/best/best_thum01.jpg" alt="썸네일"></a></div>
+                                            <div class="item_detail">
+                                                <a href="#">
+                                                    <p class="title">원팩쿠캣 쭈꾸미 볶음 2종</p>
+                                                    <p class="contents">전자레인지 4분 30초면 요리 끝!</p>
+                                                    <p class="price">6,900원</p>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide slide2">
+                                        <div id="cart"><a href="#"><img src="./images/icon/cart2.png" alt="쇼핑카트"></a></div>
+                                        <div class="item_wrap">
+                                            <div class="thum"><a href="#"><img src="./images/item/best/best_thum02.jpg" alt="썸네일"></a></div>
+                                            <div class="item_detail">
+                                                <a href="#">
+                                                    <p class="title">렌지쿠캣 오픈 닭구이 3종</p>
+                                                    <p class="contents">3분이면 배달 치킨의 맛이 뚝딱</p>
+                                                    <p class="price">6,900원</p>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide slide3">
+                                        <div id="cart"><a href="#"><img src="./images/icon/cart2.png" alt="쇼핑카트"></a></div>
+                                        <div class="item_wrap">
+                                            <div class="thum"><a href="#"><img src="./images/item/best/best_thum03.jpg" alt="썸네일"></a></div>
+                                            <div class="item_detail">
+                                                <a href="#">
+                                                    <p class="title">바로쿠캣 밥도둑 5종(깐새우장 / 순살게장)</p>
+                                                    <p class="contents">이거 하나면 밥 한 공기 순삭</p>
+                                                    <p class="price">12,900원</p>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide slide4">
+                                        <div id="cart"><a href="#"><img src="./images/icon/cart2.png" alt="쇼핑카트"></a></div>
+                                        <div class="item_wrap">
+                                            <div class="thum"><a href="#"><img src="./images/item/best/best_thum04.jpg" alt="썸네일"></a></div>
+                                            <div class="item_detail">
+                                                <a href="#">
+                                                    <p class="title">원팩쿠캣 쭈꾸미 볶음 2종</p>
+                                                    <p class="contents">전자레인지 4분 30초면 요리 끝!</p>
+                                                    <p class="price">6,900원</p>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide slide5">
+                                        <div id="cart"><a href="#"><img src="./images/icon/cart2.png" alt="쇼핑카트"></a></div>
+                                        <div class="item_wrap">
+                                            <div class="thum"><a href="#"><img src="./images/item/best/best_thum05.jpg" alt="썸네일"></a></div>
+                                            <div class="item_detail">
+                                                <a href="#">
+                                                    <p class="title">렌지쿠캣 오픈 닭구이 3종</p>
+                                                    <p class="contents">3분이면 배달 치킨의 맛이 뚝딱</p>
+                                                    <p class="price">6,900원</p>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide slide6">
+                                        <div id="cart"><a href="#"><img src="./images/icon/cart2.png" alt="쇼핑카트"></a></div>
+                                        <div class="item_wrap">
+                                            <div class="thum"><a href="#"><img src="./images/item/best/best_thum06.jpg" alt="썸네일"></a></div>
+                                            <div class="item_detail">
+                                                <a href="#">
+                                                    <p class="title">바로쿠캣 밥도둑 5종(깐새우장 / 순살게장)</p>
+                                                    <p class="contents">이거 하나면 밥 한 공기 순삭</p>
+                                                    <p class="price">12,900원</p>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-button-prev"></div>
+                                <div class="swiper-button-next"></div>
+                                <div class="swiper-scrollbar"></div>
+                            </div>
+                        </div>
+                        <!-- 명예의전당 -->
+                        <div class="sub_item item4">
+                            <div class="swiper" id="best_topranking">
+                                <!--필수-->
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide slide1">
+                                        <div id="cart"><a href="#"><img src="./images/icon/cart2.png" alt="쇼핑카트"></a></div>
+                                        <div class="item_wrap">
+                                            <div class="thum"><a href="#"><img src="./images/item/best/best_thum01.jpg" alt="썸네일"></a></div>
+                                            <div class="item_detail">
+                                                <a href="#">
+                                                    <p class="title">원팩쿠캣 쭈꾸미 볶음 2종</p>
+                                                    <p class="contents">전자레인지 4분 30초면 요리 끝!</p>
+                                                    <p class="price">6,900원</p>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide slide2">
+                                        <div id="cart"><a href="#"><img src="./images/icon/cart2.png" alt="쇼핑카트"></a></div>
+                                        <div class="item_wrap">
+                                            <div class="thum"><a href="#"><img src="./images/item/best/best_thum02.jpg" alt="썸네일"></a></div>
+                                            <div class="item_detail">
+                                                <a href="#">
+                                                    <p class="title">렌지쿠캣 오픈 닭구이 3종</p>
+                                                    <p class="contents">3분이면 배달 치킨의 맛이 뚝딱</p>
+                                                    <p class="price">6,900원</p>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide slide3">
+                                        <div id="cart"><a href="#"><img src="./images/icon/cart2.png" alt="쇼핑카트"></a></div>
+                                        <div class="item_wrap">
+                                            <div class="thum"><a href="#"><img src="./images/item/best/best_thum03.jpg" alt="썸네일"></a></div>
+                                            <div class="item_detail">
+                                                <a href="#">
+                                                    <p class="title">바로쿠캣 밥도둑 5종(깐새우장 / 순살게장)</p>
+                                                    <p class="contents">이거 하나면 밥 한 공기 순삭</p>
+                                                    <p class="price">12,900원</p>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide slide4">
+                                        <div id="cart"><a href="#"><img src="./images/icon/cart2.png" alt="쇼핑카트"></a></div>
+                                        <div class="item_wrap">
+                                            <div class="thum"><a href="#"><img src="./images/item/best/best_thum04.jpg" alt="썸네일"></a></div>
+                                            <div class="item_detail">
+                                                <a href="#">
+                                                    <p class="title">원팩쿠캣 쭈꾸미 볶음 2종</p>
+                                                    <p class="contents">전자레인지 4분 30초면 요리 끝!</p>
+                                                    <p class="price">6,900원</p>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide slide5">
+                                        <div id="cart"><a href="#"><img src="./images/icon/cart2.png" alt="쇼핑카트"></a></div>
+                                        <div class="item_wrap">
+                                            <div class="thum"><a href="#"><img src="./images/item/best/best_thum05.jpg" alt="썸네일"></a></div>
+                                            <div class="item_detail">
+                                                <a href="#">
+                                                    <p class="title">렌지쿠캣 오픈 닭구이 3종</p>
+                                                    <p class="contents">3분이면 배달 치킨의 맛이 뚝딱</p>
+                                                    <p class="price">6,900원</p>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide slide6">
+                                        <div id="cart"><a href="#"><img src="./images/icon/cart2.png" alt="쇼핑카트"></a></div>
+                                        <div class="item_wrap">
+                                            <div class="thum"><a href="#"><img src="./images/item/best/best_thum06.jpg" alt="썸네일"></a></div>
+                                            <div class="item_detail">
+                                                <a href="#">
+                                                    <p class="title">바로쿠캣 밥도둑 5종(깐새우장 / 순살게장)</p>
+                                                    <p class="contents">이거 하나면 밥 한 공기 순삭</p>
+                                                    <p class="price">12,900원</p>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-button-prev"></div>
+                                <div class="swiper-button-next"></div>
+                                <div class="swiper-scrollbar"></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <!--필요 시 사용(선택)-->
-                <div class="swiper-pagination" id="bnr_pagination"></div>
-                <div class="swiper-button-prev" id="left_btn"></div>
-                <div class="swiper-button-next" id="right_btn"></div>
-                <div class="swiper-scrollbar" id="bnr_scrollbar"></div>
-            </div>
-        </section>
-        <section id="best"></section>
-        <section id="ranking"></section>
-        <section id="time_sale"></section>  
-        <section id="video"></section>
-        <section id="category1"></section>
-        <section id="subbnr"></section>
+            </section>
+            <!-- 쿠캣 상반기 맛로그 -->
+            <section id="ranking">
+                <div class="ranking_wrap">
+                    <div class="ranking_title">
+                        <p><img src="./images/cookat.png" alt="쿠캣로고"></p>
+                        <h2>2025 쿠캣 상반기 맛로그</h2>
+                        <p><span>쿠캣 추천 테마</span></p>
+                    </div>
+                    <ul class="ranking_main_tab">
+                        <li>
+                            <a href="#">올인원 원팩쿠캣</a>
+                            <div class="ranking_sub_bg">
+                                <ul class="ranking_sub">
+                                    <li>
+                                        <div id="cart"><a href="#"><img src="./images/icon/cart2.png" alt="쇼핑카트"></a></div>
+                                        <div class="item_wrap">
+                                            <div class="thum"><a href="#"><img src="./images/item/ranking/ranking_thum01.png" alt="썸네일"></a></div>
+                                            <div class="item_detail">
+                                                <a href="#">
+                                                    <p class="title">쿠캣 메이드 매운마늘카레 2종(1단계/2단계)</p>
+                                                    <span>15%</span>
+                                                    <p><em>2,200원</em></p>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div id="cart"><a href="#"><img src="./images/icon/cart2.png" alt="쇼핑카트"></a></div>
+                                        <div class="item_wrap">
+                                            <div class="thum"><a href="#"><img src="./images/item/ranking/ranking_thum02.png" alt="썸네일"></a></div>
+                                            <div class="item_detail">
+                                                <a href="#">
+                                                    <p class="title">쿠캣 메이드 매운마늘카레 2종(1단계/2단계)</p>
+                                                    <span>15%</span>
+                                                    <p><em>2,200원</em></p>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div id="cart"><a href="#"><img src="./images/icon/cart2.png" alt="쇼핑카트"></a></div>
+                                        <div class="item_wrap">
+                                            <div class="thum"><a href="#"><img src="./images/item/ranking/ranking_thum03.png" alt="썸네일"></a></div>
+                                            <div class="item_detail">
+                                                <a href="#">
+                                                    <p class="title">쿠캣 메이드 매운마늘카레 2종(1단계/2단계)</p>
+                                                    <span>15%</span>
+                                                    <p><em>2,200원</em></p>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div id="cart"><a href="#"><img src="./images/icon/cart2.png" alt="쇼핑카트"></a></div>
+                                        <div class="item_wrap">
+                                            <div class="thum"><a href="#"><img src="./images/item/ranking/ranking_thum04.png" alt="썸네일"></a></div>
+                                            <div class="item_detail">
+                                                <a href="#">
+                                                    <p class="title">쿠캣 메이드 매운마늘카레 2종(1단계/2단계)</p>
+                                                    <span>15%</span>
+                                                    <p><em>2,200원</em></p>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div id="cart"><a href="#"><img src="./images/icon/cart2.png" alt="쇼핑카트"></a></div>
+                                        <div class="item_wrap">
+                                            <div class="thum"><a href="#"><img src="./images/item/ranking/ranking_thum05.png" alt="썸네일"></a></div>
+                                            <div class="item_detail">
+                                                <a href="#">
+                                                    <p class="title">쿠캣 메이드 매운마늘카레 2종(1단계/2단계)</p>
+                                                    <span>15%</span>
+                                                    <p><em>2,200원</em></p>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div id="cart"><a href="#"><img src="./images/icon/cart2.png" alt="쇼핑카트"></a></div>
+                                        <div class="item_wrap">
+                                            <div class="thum"><a href="#"><img src="./images/item/ranking/ranking_thum05.png" alt="썸네일"></a></div>
+                                            <div class="item_detail">
+                                                <a href="#">
+                                                    <p class="title">쿠캣 메이드 매운마늘카레 2종(1단계/2단계)</p>
+                                                    <span>15%</span>
+                                                    <p><em>2,200원</em></p>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div id="cart"><a href="#"><img src="./images/icon/cart2.png" alt="쇼핑카트"></a></div>
+                                        <div class="item_wrap">
+                                            <div class="thum"><a href="#"><img src="./images/item/ranking/ranking_thum07.png" alt="썸네일"></a></div>
+                                            <div class="item_detail">
+                                                <a href="#">
+                                                    <p class="title">쿠캣 메이드 매운마늘카레 2종(1단계/2단계)</p>
+                                                    <span>15%</span>
+                                                    <p><em>2,200원</em></p>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div id="cart"><a href="#"><img src="./images/icon/cart2.png" alt="쇼핑카트"></a></div>
+                                        <div class="item_wrap">
+                                            <div class="thum"><a href="#"><img src="./images/item/ranking/ranking_thum08.png" alt="썸네일"></a></div>
+                                            <div class="item_detail">
+                                                <a href="#">
+                                                    <p class="title">쿠캣 메이드 매운마늘카레 2종(1단계/2단계)</p>
+                                                    <span>15%</span>
+                                                    <p><em>2,200원</em></p>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">초간편 렌지쿠캣</a>
+                            <div class="ranking_sub_bg">
+                                <ul class="ranking_sub">
+                                    <li>
+                                        <div id="cart"><a href="#"><img src="./images/icon/cart2.png" alt="쇼핑카트"></a></div>
+                                        <div class="item_wrap">
+                                            <div class="thum"><a href="#"><img src="./images/item/ranking/ranking_thum01.png" alt="썸네일"></a></div>
+                                            <div class="item_detail">
+                                                <a href="#">
+                                                    <p class="title">쿠캣 메이드 매운마늘카레 2종(1단계/2단계)</p>
+                                                    <span>15%</span>
+                                                    <p><em>2,200원</em></p>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div id="cart"><a href="#"><img src="./images/icon/cart2.png" alt="쇼핑카트"></a></div>
+                                        <div class="item_wrap">
+                                            <div class="thum"><a href="#"><img src="./images/item/ranking/ranking_thum02.png" alt="썸네일"></a></div>
+                                            <div class="item_detail">
+                                                <a href="#">
+                                                    <p class="title">쿠캣 메이드 매운마늘카레 2종(1단계/2단계)</p>
+                                                    <span>15%</span>
+                                                    <p><em>2,200원</em></p>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div id="cart"><a href="#"><img src="./images/icon/cart2.png" alt="쇼핑카트"></a></div>
+                                        <div class="item_wrap">
+                                            <div class="thum"><a href="#"><img src="./images/item/ranking/ranking_thum03.png" alt="썸네일"></a></div>
+                                            <div class="item_detail">
+                                                <a href="#">
+                                                    <p class="title">쿠캣 메이드 매운마늘카레 2종(1단계/2단계)</p>
+                                                    <span>15%</span>
+                                                    <p><em>2,200원</em></p>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div id="cart"><a href="#"><img src="./images/icon/cart2.png" alt="쇼핑카트"></a></div>
+                                        <div class="item_wrap">
+                                            <div class="thum"><a href="#"><img src="./images/item/ranking/ranking_thum04.png" alt="썸네일"></a></div>
+                                            <div class="item_detail">
+                                                <a href="#">
+                                                    <p class="title">쿠캣 메이드 매운마늘카레 2종(1단계/2단계)</p>
+                                                    <span>15%</span>
+                                                    <p><em>2,200원</em></p>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div id="cart"><a href="#"><img src="./images/icon/cart2.png" alt="쇼핑카트"></a></div>
+                                        <div class="item_wrap">
+                                            <div class="thum"><a href="#"><img src="./images/item/ranking/ranking_thum05.png" alt="썸네일"></a></div>
+                                            <div class="item_detail">
+                                                <a href="#">
+                                                    <p class="title">쿠캣 메이드 매운마늘카레 2종(1단계/2단계)</p>
+                                                    <span>15%</span>
+                                                    <p><em>2,200원</em></p>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div id="cart"><a href="#"><img src="./images/icon/cart2.png" alt="쇼핑카트"></a></div>
+                                        <div class="item_wrap">
+                                            <div class="thum"><a href="#"><img src="./images/item/ranking/ranking_thum05.png" alt="썸네일"></a></div>
+                                            <div class="item_detail">
+                                                <a href="#">
+                                                    <p class="title">쿠캣 메이드 매운마늘카레 2종(1단계/2단계)</p>
+                                                    <span>15%</span>
+                                                    <p><em>2,200원</em></p>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div id="cart"><a href="#"><img src="./images/icon/cart2.png" alt="쇼핑카트"></a></div>
+                                        <div class="item_wrap">
+                                            <div class="thum"><a href="#"><img src="./images/item/ranking/ranking_thum07.png" alt="썸네일"></a></div>
+                                            <div class="item_detail">
+                                                <a href="#">
+                                                    <p class="title">쿠캣 메이드 매운마늘카레 2종(1단계/2단계)</p>
+                                                    <span>15%</span>
+                                                    <p><em>2,200원</em></p>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div id="cart"><a href="#"><img src="./images/icon/cart2.png" alt="쇼핑카트"></a></div>
+                                        <div class="item_wrap">
+                                            <div class="thum"><a href="#"><img src="./images/item/ranking/ranking_thum08.png" alt="썸네일"></a></div>
+                                            <div class="item_detail">
+                                                <a href="#">
+                                                    <p class="title">쿠캣 메이드 매운마늘카레 2종(1단계/2단계)</p>
+                                                    <span>15%</span>
+                                                    <p><em>2,200원</em></p>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">식단관리 띵커바디</a>
+                            <div class="ranking_sub_bg">
+                                <ul class="ranking_sub">
+                                    <li>
+                                        <div id="cart"><a href="#"><img src="./images/icon/cart2.png" alt="쇼핑카트"></a></div>
+                                        <div class="item_wrap">
+                                            <div class="thum"><a href="#"><img src="./images/item/ranking/ranking_thum01.png" alt="썸네일"></a></div>
+                                            <div class="item_detail">
+                                                <a href="#">
+                                                    <p class="title">쿠캣 메이드 매운마늘카레 2종(1단계/2단계)</p>
+                                                    <span>15%</span>
+                                                    <p><em>2,200원</em></p>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div id="cart"><a href="#"><img src="./images/icon/cart2.png" alt="쇼핑카트"></a></div>
+                                        <div class="item_wrap">
+                                            <div class="thum"><a href="#"><img src="./images/item/ranking/ranking_thum02.png" alt="썸네일"></a></div>
+                                            <div class="item_detail">
+                                                <a href="#">
+                                                    <p class="title">쿠캣 메이드 매운마늘카레 2종(1단계/2단계)</p>
+                                                    <span>15%</span>
+                                                    <p><em>2,200원</em></p>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div id="cart"><a href="#"><img src="./images/icon/cart2.png" alt="쇼핑카트"></a></div>
+                                        <div class="item_wrap">
+                                            <div class="thum"><a href="#"><img src="./images/item/ranking/ranking_thum03.png" alt="썸네일"></a></div>
+                                            <div class="item_detail">
+                                                <a href="#">
+                                                    <p class="title">쿠캣 메이드 매운마늘카레 2종(1단계/2단계)</p>
+                                                    <span>15%</span>
+                                                    <p><em>2,200원</em></p>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div id="cart"><a href="#"><img src="./images/icon/cart2.png" alt="쇼핑카트"></a></div>
+                                        <div class="item_wrap">
+                                            <div class="thum"><a href="#"><img src="./images/item/ranking/ranking_thum04.png" alt="썸네일"></a></div>
+                                            <div class="item_detail">
+                                                <a href="#">
+                                                    <p class="title">쿠캣 메이드 매운마늘카레 2종(1단계/2단계)</p>
+                                                    <span>15%</span>
+                                                    <p><em>2,200원</em></p>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div id="cart"><a href="#"><img src="./images/icon/cart2.png" alt="쇼핑카트"></a></div>
+                                        <div class="item_wrap">
+                                            <div class="thum"><a href="#"><img src="./images/item/ranking/ranking_thum05.png" alt="썸네일"></a></div>
+                                            <div class="item_detail">
+                                                <a href="#">
+                                                    <p class="title">쿠캣 메이드 매운마늘카레 2종(1단계/2단계)</p>
+                                                    <span>15%</span>
+                                                    <p><em>2,200원</em></p>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div id="cart"><a href="#"><img src="./images/icon/cart2.png" alt="쇼핑카트"></a></div>
+                                        <div class="item_wrap">
+                                            <div class="thum"><a href="#"><img src="./images/item/ranking/ranking_thum05.png" alt="썸네일"></a></div>
+                                            <div class="item_detail">
+                                                <a href="#">
+                                                    <p class="title">쿠캣 메이드 매운마늘카레 2종(1단계/2단계)</p>
+                                                    <span>15%</span>
+                                                    <p><em>2,200원</em></p>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div id="cart"><a href="#"><img src="./images/icon/cart2.png" alt="쇼핑카트"></a></div>
+                                        <div class="item_wrap">
+                                            <div class="thum"><a href="#"><img src="./images/item/ranking/ranking_thum07.png" alt="썸네일"></a></div>
+                                            <div class="item_detail">
+                                                <a href="#">
+                                                    <p class="title">쿠캣 메이드 매운마늘카레 2종(1단계/2단계)</p>
+                                                    <span>15%</span>
+                                                    <p><em>2,200원</em></p>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div id="cart"><a href="#"><img src="./images/icon/cart2.png" alt="쇼핑카트"></a></div>
+                                        <div class="item_wrap">
+                                            <div class="thum"><a href="#"><img src="./images/item/ranking/ranking_thum08.png" alt="썸네일"></a></div>
+                                            <div class="item_detail">
+                                                <a href="#">
+                                                    <p class="title">쿠캣 메이드 매운마늘카레 2종(1단계/2단계)</p>
+                                                    <span>15%</span>
+                                                    <p><em>2,200원</em></p>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">자취필수템 즉석식품</a>
+                            <div class="ranking_sub_bg">
+                                <ul class="ranking_sub">
+                                    <li>
+                                        <div id="cart"><a href="#"><img src="./images/icon/cart2.png" alt="쇼핑카트"></a></div>
+                                        <div class="item_wrap">
+                                            <div class="thum"><a href="#"><img src="./images/item/ranking/ranking_thum01.png" alt="썸네일"></a></div>
+                                            <div class="item_detail">
+                                                <a href="#">
+                                                    <p class="title">쿠캣 메이드 매운마늘카레 2종(1단계/2단계)</p>
+                                                    <span>15%</span>
+                                                    <p><em>2,200원</em></p>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div id="cart"><a href="#"><img src="./images/icon/cart2.png" alt="쇼핑카트"></a></div>
+                                        <div class="item_wrap">
+                                            <div class="thum"><a href="#"><img src="./images/item/ranking/ranking_thum02.png" alt="썸네일"></a></div>
+                                            <div class="item_detail">
+                                                <a href="#">
+                                                    <p class="title">쿠캣 메이드 매운마늘카레 2종(1단계/2단계)</p>
+                                                    <span>15%</span>
+                                                    <p><em>2,200원</em></p>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div id="cart"><a href="#"><img src="./images/icon/cart2.png" alt="쇼핑카트"></a></div>
+                                        <div class="item_wrap">
+                                            <div class="thum"><a href="#"><img src="./images/item/ranking/ranking_thum03.png" alt="썸네일"></a></div>
+                                            <div class="item_detail">
+                                                <a href="#">
+                                                    <p class="title">쿠캣 메이드 매운마늘카레 2종(1단계/2단계)</p>
+                                                    <span>15%</span>
+                                                    <p><em>2,200원</em></p>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div id="cart"><a href="#"><img src="./images/icon/cart2.png" alt="쇼핑카트"></a></div>
+                                        <div class="item_wrap">
+                                            <div class="thum"><a href="#"><img src="./images/item/ranking/ranking_thum04.png" alt="썸네일"></a></div>
+                                            <div class="item_detail">
+                                                <a href="#">
+                                                    <p class="title">쿠캣 메이드 매운마늘카레 2종(1단계/2단계)</p>
+                                                    <span>15%</span>
+                                                    <p><em>2,200원</em></p>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div id="cart"><a href="#"><img src="./images/icon/cart2.png" alt="쇼핑카트"></a></div>
+                                        <div class="item_wrap">
+                                            <div class="thum"><a href="#"><img src="./images/item/ranking/ranking_thum05.png" alt="썸네일"></a></div>
+                                            <div class="item_detail">
+                                                <a href="#">
+                                                    <p class="title">쿠캣 메이드 매운마늘카레 2종(1단계/2단계)</p>
+                                                    <span>15%</span>
+                                                    <p><em>2,200원</em></p>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div id="cart"><a href="#"><img src="./images/icon/cart2.png" alt="쇼핑카트"></a></div>
+                                        <div class="item_wrap">
+                                            <div class="thum"><a href="#"><img src="./images/item/ranking/ranking_thum05.png" alt="썸네일"></a></div>
+                                            <div class="item_detail">
+                                                <a href="#">
+                                                    <p class="title">쿠캣 메이드 매운마늘카레 2종(1단계/2단계)</p>
+                                                    <span>15%</span>
+                                                    <p><em>2,200원</em></p>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div id="cart"><a href="#"><img src="./images/icon/cart2.png" alt="쇼핑카트"></a></div>
+                                        <div class="item_wrap">
+                                            <div class="thum"><a href="#"><img src="./images/item/ranking/ranking_thum07.png" alt="썸네일"></a></div>
+                                            <div class="item_detail">
+                                                <a href="#">
+                                                    <p class="title">쿠캣 메이드 매운마늘카레 2종(1단계/2단계)</p>
+                                                    <span>15%</span>
+                                                    <p><em>2,200원</em></p>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div id="cart"><a href="#"><img src="./images/icon/cart2.png" alt="쇼핑카트"></a></div>
+                                        <div class="item_wrap">
+                                            <div class="thum"><a href="#"><img src="./images/item/ranking/ranking_thum08.png" alt="썸네일"></a></div>
+                                            <div class="item_detail">
+                                                <a href="#">
+                                                    <p class="title">쿠캣 메이드 매운마늘카레 2종(1단계/2단계)</p>
+                                                    <span>15%</span>
+                                                    <p><em>2,200원</em></p>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="more">
+                        <a href="#">더 보러가기</a>
+                    </div>
+                </div>
+            </section>
+            <!-- 타임세일 매주 새로운 타임특가 -->
+            <section id="time_sale">
+                <div class="time_wrap">
+                    <div class="time_title">
+                        <p><img src="./images/time_sale.png" alt="쿠캣로고"></p>
+                        <h2>매주 새로운 타임 특가</h2>
+                        <p><span>절대 놓칠 수 없는 가격!</span></p>
+                    </div>
+                    <div id="timer"></div>
+                    <div class="timer_container">
+                        <div class="swiper" id="time_swiper">
+                            <!--필수-->
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide slide1">
+                                    <div class="item_wrap">
+                                        <div class="thum"><a href="#"><img src="./images/item/time_sale/time_thum01.png" alt="썸네일"></a></div>
+                                        <div class="item_detail">
+                                            <a href="#">
+                                                <p class="title">[선착순특가]원팩쿠캣 점보소불고기 1kg</p>
+                                                <span><del>17,000원</del></span>
+                                                <span>61%</span>
+                                                <p><em>6,900원</em></p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide slide2">
+                                    <div class="item_wrap">
+                                        <div class="thum"><a href="#"><img src="./images/item/time_sale/time_thum02.png" alt="썸네일"></a></div>
+                                        <div class="item_detail">
+                                            <a href="#">
+                                                <p class="title">쿠캣메이드 볶음밥 8종</p>
+                                                <span><del>3,500원</del></span>
+                                                <span>72%</span>
+                                                <p><em>900원</em></p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide slide3">
+                                    <div class="item_wrap">
+                                        <div class="thum"><a href="#"><img src="./images/item/time_sale/time_thum03.png" alt="썸네일"></a></div>
+                                        <div class="item_detail">
+                                            <a href="#">
+                                                <p class="title">원팩쿠캣 허브오리로스 250g</p>
+                                                <span><del>23,500원</del></span>
+                                                <span>62%</span>
+                                                <p><em>5,900원</em></p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide slide4">
+                                    <div class="item_wrap">
+                                        <div class="thum"><a href="#"><img src="./images/item/time_sale/time_thum01.png" alt="썸네일"></a></div>
+                                        <div class="item_detail">
+                                            <a href="#">
+                                                <p class="title">[선착순특가]원팩쿠캣 점보소불고기 1kg</p>
+                                                <span><del>17,000원</del></span>
+                                                <span>61%</span>
+                                                <p><em>6,900원</em></p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide slide5">
+                                    <div class="item_wrap">
+                                        <div class="thum"><a href="#"><img src="./images/item/time_sale/time_thum02.png" alt="썸네일"></a></div>
+                                        <div class="item_detail">
+                                            <a href="#">
+                                                <p class="title">쿠캣메이드 볶음밥 8종</p>
+                                                <span><del>3,500원</del></span>
+                                                <span>72%</span>
+                                                <p><em>900원</em></p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--필요 시 사용(선택)-->
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- 쿠캣신공 비디오 -->
+            <section id="video">
+                <div class="video_container">
+                    <div class="video_title">
+                        <h2>쿠캣신공</h2>
+                        <p><span>오직 쿠캣에서만 최초로 공개하는 신상!</span></p> 
+                    </div>
+                    <div class="video_wrap">
+                        <div class="video_left">
+                            <iframe width="1310" height="737" src="https://www.youtube.com/embed/6jZPL0FvRQA?autoplay=1&mute=1&loop=1&controls=0&playlist=6jZPL0FvRQA&" title="배고플 땐 참지말고! 스마트하게 먹는게, 바로 #캣이득" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        <div class="video_right">
+                            <ul>
+                                <li>
+                                    <div class="video_item item1">
+                                        <div class="small_thum"><a href="#"><img src="./images/item/small_thum01.png" alt="썸네일"></a></div>
+                                        <div class="product">
+                                            <p>쿠캣메이드 빵빵 찹쌀떡 3종</p>
+                                            <del>19,900원</del>
+                                            <div class="price">
+                                                <em>50%</em>
+                                                <span>9,980원</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a href="#"><img src="./images/icon/cart2.png" alt="장바구니"></a>
+                                </li>
+                                <li>
+                                    <div class="video_item item1">
+                                        <div class="small_thum"><a href="#"><img src="./images/item/small_thum02.png" alt="썸네일"></a></div>
+                                        <div class="product">
+                                            <p>랜지쿠캣 반반만두 168g</p>
+                                            <del>10,000원</del>
+                                            <div class="price">
+                                                <em>50%</em>
+                                                <span>3,900원</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a href="#"><img src="./images/icon/cart2.png" alt="장바구니"></a>
+                                </li>
+                                <li>
+                                    <div class="video_item item1">
+                                        <div class="small_thum"><a href="#"><img src="./images/item/small_thum03.png" alt="썸네일"></a></div>
+                                        <div class="product">
+                                            <p>쿠캣메이드 당면덕후떡볶이 340g</p>
+                                            <del>5,900원</del>
+                                            <div class="price">
+                                                <em>22%</em>
+                                                <span>4,600원</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a href="#"><img src="./images/icon/cart2.png" alt="장바구니"></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="more">
+                        <a href="#">더 보러가기</a>
+                    </div>
+                </div>
+            </section>
+            <!-- 집가면 체력고갈 -->
+            <section id="category1">
+                <div class="category_title"> 
+                    <h2>매주 새로운 타임 특가</h2>
+                    <p><span>절대 놓칠 수 없는 가격!</span></p>
+                </div>
+                <div class="cate_wrap">
+                    <ul>
+                        <li>
+                            <div class="thum"><a href="#"><img src="./images/item/time_sale/time_thum01.png" alt="썸네일"></a></div>
+                            <div class="item_detail">
+                                <a href="#">
+                                    <p class="title">[선착순특가]원팩쿠캣 점보소불고기 1kg</p>
+                                    <span><del>17,000원</del></span>
+                                    <span>61%</span>
+                                    <p><em>6,900원</em></p>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="thum"><a href="#"><img src="./images/item/time_sale/time_thum01.png" alt="썸네일"></a></div>
+                            <div class="item_detail">
+                                <a href="#">
+                                    <p class="title">[선착순특가]원팩쿠캣 점보소불고기 1kg</p>
+                                    <span><del>17,000원</del></span>
+                                    <span>61%</span>
+                                    <p><em>6,900원</em></p>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="thum"><a href="#"><img src="./images/item/time_sale/time_thum01.png" alt="썸네일"></a></div>
+                            <div class="item_detail">
+                                <a href="#">
+                                    <p class="title">[선착순특가]원팩쿠캣 점보소불고기 1kg</p>
+                                    <span><del>17,000원</del></span>
+                                    <span>61%</span>
+                                    <p><em>6,900원</em></p>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="thum"><a href="#"><img src="./images/item/time_sale/time_thum01.png" alt="썸네일"></a></div>
+                            <div class="item_detail">
+                                <a href="#">
+                                    <p class="title">[선착순특가]원팩쿠캣 점보소불고기 1kg</p>
+                                    <span><del>17,000원</del></span>
+                                    <span>61%</span>
+                                    <p><em>6,900원</em></p>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="more">
+                    <a href="#">더 보러가기</a>
+                </div>
+            </section>
+            <!-- 서브배너 -->
+            <section id="subbnr">
+                <div class="sub_bnr">
+                    <a href="#">
+                        <img src="./images/sub_bnr1.jpg" alt="가로서브배너">
+                    </a>
+                </div>
+            </section>
+            <!-- 소울푸드 3대장 -->
+            <section id="category2">
+                <div class="category_title"> 
+                    <h2>소울푸드 3대장</h2>
+                    <p><span>일주일 내내 먹어도 안질리는 돈까스/제육/국밥</span></p>
+                </div>
+                <div class="cate_wrap">
+                    <ul>
+                        <li>
+                            <div class="thum"><a href="#"><img src="./images/item/time_sale/time_thum01.png" alt="썸네일"></a></div>
+                            <div class="item_detail">
+                                <a href="#">
+                                    <p class="title">[선착순특가]원팩쿠캣 점보소불고기 1kg</p>
+                                    <span><del>17,000원</del></span>
+                                    <span>61%</span>
+                                    <p><em>6,900원</em></p>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="thum"><a href="#"><img src="./images/item/time_sale/time_thum01.png" alt="썸네일"></a></div>
+                            <div class="item_detail">
+                                <a href="#">
+                                    <p class="title">[선착순특가]원팩쿠캣 점보소불고기 1kg</p>
+                                    <span><del>17,000원</del></span>
+                                    <span>61%</span>
+                                    <p><em>6,900원</em></p>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="thum"><a href="#"><img src="./images/item/time_sale/time_thum01.png" alt="썸네일"></a></div>
+                            <div class="item_detail">
+                                <a href="#">
+                                    <p class="title">[선착순특가]원팩쿠캣 점보소불고기 1kg</p>
+                                    <span><del>17,000원</del></span>
+                                    <span>61%</span>
+                                    <p><em>6,900원</em></p>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="thum"><a href="#"><img src="./images/item/time_sale/time_thum01.png" alt="썸네일"></a></div>
+                            <div class="item_detail">
+                                <a href="#">
+                                    <p class="title">[선착순특가]원팩쿠캣 점보소불고기 1kg</p>
+                                    <span><del>17,000원</del></span>
+                                    <span>61%</span>
+                                    <p><em>6,900원</em></p>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="more">
+                    <a href="#">더 보러가기</a>
+                </div>
+            </section>
+            <!-- 캠핑 전 준비하세요 -->
+            <section id="category3">
+                <div class="category_title"> 
+                    <h2>캠핑 전 준비하세요</h2>
+                    <p><span>캠핑장에서 어디서 샀냐고 물어본다는 잇템!</span></p>
+                </div>
+                <div class="cate_wrap">
+                    <ul>
+                        <li>
+                            <div class="thum"><a href="#"><img src="./images/item/time_sale/time_thum01.png" alt="썸네일"></a></div>
+                            <div class="item_detail">
+                                <a href="#">
+                                    <p class="title">[선착순특가]원팩쿠캣 점보소불고기 1kg</p>
+                                    <span><del>17,000원</del></span>
+                                    <span>61%</span>
+                                    <p><em>6,900원</em></p>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="thum"><a href="#"><img src="./images/item/time_sale/time_thum01.png" alt="썸네일"></a></div>
+                            <div class="item_detail">
+                                <a href="#">
+                                    <p class="title">[선착순특가]원팩쿠캣 점보소불고기 1kg</p>
+                                    <span><del>17,000원</del></span>
+                                    <span>61%</span>
+                                    <p><em>6,900원</em></p>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="thum"><a href="#"><img src="./images/item/time_sale/time_thum01.png" alt="썸네일"></a></div>
+                            <div class="item_detail">
+                                <a href="#">
+                                    <p class="title">[선착순특가]원팩쿠캣 점보소불고기 1kg</p>
+                                    <span><del>17,000원</del></span>
+                                    <span>61%</span>
+                                    <p><em>6,900원</em></p>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="thum"><a href="#"><img src="./images/item/time_sale/time_thum01.png" alt="썸네일"></a></div>
+                            <div class="item_detail">
+                                <a href="#">
+                                    <p class="title">[선착순특가]원팩쿠캣 점보소불고기 1kg</p>
+                                    <span><del>17,000원</del></span>
+                                    <span>61%</span>
+                                    <p><em>6,900원</em></p>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="more">
+                    <a href="#">더 보러가기</a>
+                </div>
+            </section>
+        </div>
     </main>
     <footer>
         <div class="top_wrap">

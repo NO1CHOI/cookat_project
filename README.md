@@ -2,4 +2,5 @@
 * 20250723 : lnb, gnb 래퍼런스 리서치
 * 20250724 : header , footer html 작성완료
 * 0728 : header , footer css 완료
+* 0729 : main html 작성 시작
 *
