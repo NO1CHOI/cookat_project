@@ -61,7 +61,45 @@ main #bnr .bnr_container #bnr_pagination {
 }
 main #bnr .bnr_container #bnr_pagination span {color:#686868;}
 /* main ============================= best */
+main #best {}
+main #best .best_category {}
+main #best .best_category .best_mainitem {}
+main #best .best_category .best_mainitem li {}
+main #best .best_category .best_mainitem li a {}
+main #best .best_category .best_mainitem li a img {}
+main #best .best_category .best_sub {}
+main #best .best_category .best_sub .sub_item {}
+/* 개별 선택자 */
+main #best .best_category .best_sub .sub_item #best_hot {}
+main #best .best_category .best_sub .sub_item #best_repurchase {}
+main #best .best_category .best_sub .sub_item #best_sum {}
+main #best .best_category .best_sub .sub_item #best_topranking {}
+main #best .best_category .best_sub .sub_item #best_hot .swiper-wrapper {}
+main #best .best_category .best_sub .sub_item #best_repurchase .swiper-wrapper {}
+main #best .best_category .best_sub .sub_item #best_sum .swiper-wrapper {}
+main #best .best_category .best_sub .sub_item #best_topranking .swiper-wrapper {}
+/* 공통선택자 */
+main #best .best_category .best_sub .sub_item .swiper .swiper-wrapper .swiper-slide {}
+main #best .best_category .best_sub .sub_item .swiper .swiper-wrapper .swiper-slide #cart {}
+main #best .best_category .best_sub .sub_item .swiper .swiper-wrapper .swiper-slide #cart a {}
+main #best .best_category .best_sub .sub_item .swiper .swiper-wrapper .swiper-slide #cart a img {}
+main #best .best_category .best_sub .sub_item .swiper .swiper-wrapper .swiper-slide .item_wrap {}
+main #best .best_category .best_sub .sub_item .swiper .swiper-wrapper .swiper-slide .item_wrap .thum {}
+main #best .best_category .best_sub .sub_item .swiper .swiper-wrapper .swiper-slide .item_wrap .thum a {}
+main #best .best_category .best_sub .sub_item .swiper .swiper-wrapper .swiper-slide .item_wrap .thum a img {}
+main #best .best_category .best_sub .sub_item .swiper .swiper-wrapper .swiper-slide .item_wrap .item_detail {}
+main #best .best_category .best_sub .sub_item .swiper .swiper-wrapper .swiper-slide .item_wrap .item_detail a {}
+main #best .best_category .best_sub .sub_item .swiper .swiper-wrapper .swiper-slide .item_wrap .item_detail a p {}
+main #best .best_category .best_sub .sub_item .swiper .swiper-wrapper .swiper-slide .item_wrap .item_detail a .title {}
+main #best .best_category .best_sub .sub_item .swiper .swiper-wrapper .swiper-slide .item_wrap .item_detail a .contents {}
+main #best .best_category .best_sub .sub_item .swiper .swiper-wrapper .swiper-slide .item_wrap .item_detail a .price {}
+main #best .best_category .best_sub .sub_item .swiper .swiper-button-prev {}
+main #best .best_category .best_sub .sub_item .swiper .swiper-button-next {}
+main #best .best_category .best_sub .sub_item .swiper .swiper-scrollbar {}
 /* main ============================= ranking */
+main #ranking {}
+main #ranking .ranking_wrap {}
+main #ranking .ranking_wrap .ranking_title {}
 /* main ============================= time_sale */
 /* main ============================= video */
 /* main ============================= category1 */
