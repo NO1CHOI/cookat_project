@@ -3,4 +3,5 @@
 * 20250724 : header , footer html 작성완료
 * 0728 : header , footer css 완료
 * 0729 : main html 작성 시작
-*
+* 0730 : best 카테고리 swiper 작성 완료 ㅠ
+* 

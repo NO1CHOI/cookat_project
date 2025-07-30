@@ -192,9 +192,94 @@ main #best .best_category .best_sub .sub_item .swiper-scrollbar {
     z-index: 99;
 }
 /* main ============================= ranking */
-main #ranking {display: none;}
+main #ranking {
+    margin-top:100px;
+    height: 1400px;
+    text-align: center;
+    position: relative;
+}
 main #ranking .ranking_wrap {}
-main #ranking .ranking_wrap .ranking_title {}
+main #ranking .ranking_wrap .ranking_title {margin-bottom:50px;}
+main #ranking .ranking_wrap .ranking_title p {}
+main #ranking .ranking_wrap .ranking_title p img {
+    display: block;
+    width: 100px;
+    margin: 0 auto;
+}
+main #ranking .ranking_wrap .ranking_title h2 {font-size: 2.188rem; margin:10px 0;}
+main #ranking .ranking_wrap .ranking_title p span {font-size: 1.25rem;}
+main #ranking .ranking_wrap .ranking_main_tab {
+    background-color: lightblue;
+    display:flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+main #ranking .ranking_wrap .ranking_main_tab > li {position: relative;}
+main #ranking .ranking_wrap .ranking_main_tab > li.active > a {color:#fff;background-color: #EB5500;}
+main #ranking .ranking_wrap .ranking_main_tab > li:first-child a {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+main #ranking .ranking_wrap .ranking_main_tab > li:last-child a {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+main #ranking .ranking_wrap .ranking_main_tab > li > a {
+    background-color: #F6F6F6;
+    font-size: 1.125rem;
+    font-weight: 600;
+    display: inline-block;
+    width: 270px;
+    height: 70px;
+    text-align: center;
+    line-height: 70px;
+    color:#939393;
+}
+main #ranking .ranking_wrap .ranking_main_tab li:first-child .ranking_sub_bg {display: block;}
+main #ranking .ranking_wrap .ranking_main_tab li .ranking_sub_bg {display: none;}
+main #ranking .ranking_wrap .ranking_main_tab li .ranking_sub_bg .ranking_sub {
+    margin-top:70px;
+    background-color: lightblue;
+    position:absolute;
+    left:-50%;
+    width: 1320px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+main #ranking .ranking_wrap .ranking_main_tab li .ranking_sub_bg .ranking_sub > li {position: relative;}
+main #ranking .ranking_wrap .ranking_main_tab li .ranking_sub_bg .ranking_sub > li .cart {
+    position:absolute;
+    bottom:60px; right:20px;
+    z-index: 99;
+}
+main #ranking .ranking_wrap .ranking_main_tab li .ranking_sub_bg .ranking_sub > li .cart a {}
+main #ranking .ranking_wrap .ranking_main_tab li .ranking_sub_bg .ranking_sub > li .cart a img {}
+main #ranking .ranking_wrap .ranking_main_tab li .ranking_sub_bg .ranking_sub > li .item_wrap {}
+main #ranking .ranking_wrap .ranking_main_tab li .ranking_sub_bg .ranking_sub > li .item_wrap .thum {width: 300px; height: 350px;}
+main #ranking .ranking_wrap .ranking_main_tab li .ranking_sub_bg .ranking_sub > li .item_wrap .thum a {}
+main #ranking .ranking_wrap .ranking_main_tab li .ranking_sub_bg .ranking_sub > li .item_wrap .thum a img {width: 100%;}
+main #ranking .ranking_wrap .ranking_main_tab li .ranking_sub_bg .ranking_sub > li .item_wrap .item_detail {}
+main #ranking .ranking_wrap .ranking_main_tab li .ranking_sub_bg .ranking_sub > li .item_wrap .item_detail a {}
+main #ranking .ranking_wrap .ranking_main_tab li .ranking_sub_bg .ranking_sub > li .item_wrap .item_detail a .title {}
+main #ranking .ranking_wrap .ranking_main_tab li .ranking_sub_bg .ranking_sub > li .item_wrap .item_detail a p {}
+main #ranking .ranking_wrap .ranking_main_tab li .ranking_sub_bg .ranking_sub > li .item_wrap .item_detail a p em {}
+main #ranking .ranking_wrap .ranking_main_tab li .ranking_sub_bg .ranking_sub > li .item_wrap .item_detail a span {}
+main #ranking .ranking_wrap .more {}
+main #ranking .ranking_wrap .more a {
+    /* background-color: yellowgreen; */
+    position:absolute;
+    bottom:0;
+    right:45%;
+    z-index: 999;
+    display: inline-block;
+    color:#222;
+    font-size: 1.125rem;
+    font-weight: 600;
+    padding:15px 65px;
+    border: 1px solid #E4E4E4;
+    border-radius: 50px;
+}
 /* main ============================= time_sale */
 main #time_sale {display: none;}
 /* main ============================= video */
