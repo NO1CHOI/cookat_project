@@ -4,7 +4,7 @@
 20px = 1.25rem
 35px = 2.188rem
 
-#EB5500,#CCCCCC,#FFF8F4,
+#EB5500,#CCCCCC,#FFF8F4,#606060,
 
 
 */
@@ -74,52 +74,123 @@ main #bnr .bnr_container #bnr_pagination {
 main #bnr .bnr_container #bnr_pagination span {color:#686868;}
 /* main ============================= best */
 main #best {
+    margin-top:100px;
     text-align: center;
-    background-color: wheat;
+    /* background-color: wheat; */
 }
 main #best .best_category {}
-main #best .best_category .best_title {background-color: lightblue;}
+main #best .best_category .best_title {/* background-color: lightblue; */ padding:30px 0;}
 main #best .best_category .best_title p:first-child {}
 main #best .best_category .best_title p img {
     display: block;
     width: 100px;
     margin: 0 auto;
 }
-main #best .best_category .best_title h2 {font-size: 2.188rem;}
+main #best .best_category .best_title h2 {font-size: 2.188rem; margin:10px 0;}
 main #best .best_category .best_title p span {font-size: 1.25rem;}
-main #best .best_category .best_mainitem {}
-main #best .best_category .best_mainitem li {}
-main #best .best_category .best_mainitem li a {}
-main #best .best_category .best_mainitem li a img {}
-main #best .best_category .best_sub {}
+main #best .best_category .best_mainitem {
+    display:flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    gap:40px;
+}
+main #best .best_category .best_mainitem li {
+    width: 93px; height: 97px; 
+    border: 1px solid #EEEEEE;
+    border-radius: 10px;
+    /* background-color: lightcoral; */
+}
+main #best .best_category .best_mainitem li a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 93px;
+    height: 97px;
+    background-repeat: no-repeat;
+    background-position: center 10px;
+    background-size: 50px;
+    padding-top: 60px; /* 아이콘 공간 확보 */
+}
+/* best 카테고리 이미지 기본 */
+main #best .best_category .best_mainitem li a.ranking {background-image: url(../images/icon/ranking_b.png);}
+main #best .best_category .best_mainitem li a.cart {background-image: url(../images/icon/cart.png);}
+main #best .best_category .best_mainitem li a.price {background-image: url(../images/icon/price.png);}
+main #best .best_category .best_mainitem li a.reward {background-image: url(../images/icon/reward.png);}
+/* best 카테고리 이미지 변경 */
+main #best .best_category .best_mainitem li.active a.ranking {background-image: url(../images/icon/best_ic_hot.gif);}
+main #best .best_category .best_mainitem li.active a.ranking span {color:#EB5500;}
+main #best .best_category .best_mainitem li.active a.cart {background-image: url(../images/icon/best_ic_price.gif);}
+main #best .best_category .best_mainitem li.active a.cart span {color:#EB5500;}
+main #best .best_category .best_mainitem li.active a.price {background-image: url(../images/icon/best_ic_repurchase.gif);}
+main #best .best_category .best_mainitem li.active a.price span {color:#EB5500;}
+main #best .best_category .best_mainitem li.active a.reward {background-image: url(../images/icon/best_ic_steady.gif);}
+main #best .best_category .best_mainitem li.active a.reward span {color:#EB5500;}
+/* ---------------------------- */
+main #best .best_category .best_mainitem li a img {width:50px;height:50px;}
+main #best .best_category .best_mainitem li a span {font-size:0.875rem;}
+main #best .best_category .best_sub {position: relative;}
 main #best .best_category .best_sub .sub_item {}
+main #best .best_category .best_sub .sub_item .swiper {}
 /* 개별 선택자 */
-main #best .best_category .best_sub .sub_item #best_hot {}
-main #best .best_category .best_sub .sub_item #best_repurchase {}
-main #best .best_category .best_sub .sub_item #best_sum {}
-main #best .best_category .best_sub .sub_item #best_topranking {}
-main #best .best_category .best_sub .sub_item #best_hot .swiper-wrapper {}
-main #best .best_category .best_sub .sub_item #best_repurchase .swiper-wrapper {}
-main #best .best_category .best_sub .sub_item #best_sum .swiper-wrapper {}
-main #best .best_category .best_sub .sub_item #best_topranking .swiper-wrapper {}
+main #best .best_category .best_sub .item1 {}
+main #best .best_category .best_sub .item2 {display: none;}
+main #best .best_category .best_sub .item3 {display: none;}
+main #best .best_category .best_sub .item4 {display: none;}
+main #best .best_category .best_sub.active .item1 {display: block;}
+main #best .best_category .best_sub.active .item2 {display: block;}
+main #best .best_category .best_sub.active .item3 {display: block;}
+main #best .best_category .best_sub.active .item4 {display: block;}
 /* 공통선택자 */
-main #best .best_category .best_sub .sub_item .swiper .swiper-wrapper .swiper-slide {}
-main #best .best_category .best_sub .sub_item .swiper .swiper-wrapper .swiper-slide #cart {}
-main #best .best_category .best_sub .sub_item .swiper .swiper-wrapper .swiper-slide #cart a {}
-main #best .best_category .best_sub .sub_item .swiper .swiper-wrapper .swiper-slide #cart a img {}
+main #best .best_category .best_sub .sub_item .swiper {
+    width: 1320px;
+    /* background-color: lightcoral; */
+}
+main #best .best_category .best_sub .sub_item .swiper .swiper-wrapper {margin:50px 0;}
+main #best .best_category .best_sub .sub_item .swiper .swiper-wrapper .swiper-slide {position:relative;}
+main #best .best_category .best_sub .sub_item .swiper .swiper-wrapper .swiper-slide .cart {
+    position:absolute;
+    bottom:120px; right:20px;
+    z-index: 99;
+}
+main #best .best_category .best_sub .sub_item .swiper .swiper-wrapper .swiper-slide .cart a {width: 40px;height: 40px;}
+main #best .best_category .best_sub .sub_item .swiper .swiper-wrapper .swiper-slide .cart a img {width: 100%;}
 main #best .best_category .best_sub .sub_item .swiper .swiper-wrapper .swiper-slide .item_wrap {}
-main #best .best_category .best_sub .sub_item .swiper .swiper-wrapper .swiper-slide .item_wrap .thum {}
+main #best .best_category .best_sub .sub_item .swiper .swiper-wrapper .swiper-slide .item_wrap .thum {
+    width: 400px; height: 400px;
+    border-radius: 10px;
+    overflow: hidden;
+}
 main #best .best_category .best_sub .sub_item .swiper .swiper-wrapper .swiper-slide .item_wrap .thum a {}
-main #best .best_category .best_sub .sub_item .swiper .swiper-wrapper .swiper-slide .item_wrap .thum a img {}
-main #best .best_category .best_sub .sub_item .swiper .swiper-wrapper .swiper-slide .item_wrap .item_detail {}
+main #best .best_category .best_sub .sub_item .swiper .swiper-wrapper .swiper-slide .item_wrap .thum a img {width: 100%;}
+main #best .best_category .best_sub .sub_item .swiper .swiper-wrapper .swiper-slide .item_wrap .item_detail {margin:15px 0;}
 main #best .best_category .best_sub .sub_item .swiper .swiper-wrapper .swiper-slide .item_wrap .item_detail a {}
-main #best .best_category .best_sub .sub_item .swiper .swiper-wrapper .swiper-slide .item_wrap .item_detail a p {}
-main #best .best_category .best_sub .sub_item .swiper .swiper-wrapper .swiper-slide .item_wrap .item_detail a .title {}
-main #best .best_category .best_sub .sub_item .swiper .swiper-wrapper .swiper-slide .item_wrap .item_detail a .contents {}
-main #best .best_category .best_sub .sub_item .swiper .swiper-wrapper .swiper-slide .item_wrap .item_detail a .price {}
-main #best .best_category .best_sub .sub_item .swiper .swiper-button-prev {}
-main #best .best_category .best_sub .sub_item .swiper .swiper-button-next {}
-main #best .best_category .best_sub .sub_item .swiper .swiper-scrollbar {}
+main #best .best_category .best_sub .sub_item .swiper .swiper-wrapper .swiper-slide .item_wrap .item_detail a p {margin:15px 0;}
+main #best .best_category .best_sub .sub_item .swiper .swiper-wrapper .swiper-slide .item_wrap .item_detail a .title {font-weight: 600;}
+main #best .best_category .best_sub .sub_item .swiper .swiper-wrapper .swiper-slide .item_wrap .item_detail a .contents {font-size: 0.875rem; color:#606060;}
+main #best .best_category .best_sub .sub_item .swiper .swiper-wrapper .swiper-slide .item_wrap .item_detail a .price {font-size: 1.25rem;font-weight: 600;}
+main #best .best_category .best_sub .sub_item .swiper-button-prev {
+    background-image: url(../images/icon/arrow.png);
+    transform:rotate(270deg);
+    width: 50px;
+    height: 50px;
+    left:200px;
+    top:250px;
+}
+main #best .best_category .best_sub .sub_item .swiper-button-prev::after {display:none;}
+main #best .best_category .best_sub .sub_item .swiper-button-next {
+    background-image: url(../images/icon/arrow.png);
+    transform:rotate(90deg);
+    width: 50px;
+    height: 50px;
+    right:200px;
+    top:250px;
+}
+main #best .best_category .best_sub .sub_item .swiper-button-next::after {display:none;}
+main #best .best_category .best_sub .sub_item .swiper-scrollbar {
+    width: 742px;
+    z-index: 99;
+}
 /* main ============================= ranking */
 main #ranking {display: none;}
 main #ranking .ranking_wrap {}
