@@ -1,3 +1,15 @@
+/*
+14px = 0.875rem
+18px = 1.125rem
+20px = 1.25rem
+35px = 2.188rem
+
+#EB5500,#CCCCCC,#FFF8F4,
+
+
+*/
+
+
 
 main {}
 /* main ============================= bnr */
@@ -61,8 +73,20 @@ main #bnr .bnr_container #bnr_pagination {
 }
 main #bnr .bnr_container #bnr_pagination span {color:#686868;}
 /* main ============================= best */
-main #best {}
+main #best {
+    text-align: center;
+    background-color: wheat;
+}
 main #best .best_category {}
+main #best .best_category .best_title {background-color: lightblue;}
+main #best .best_category .best_title p:first-child {}
+main #best .best_category .best_title p img {
+    display: block;
+    width: 100px;
+    margin: 0 auto;
+}
+main #best .best_category .best_title h2 {font-size: 2.188rem;}
+main #best .best_category .best_title p span {font-size: 1.25rem;}
 main #best .best_category .best_mainitem {}
 main #best .best_category .best_mainitem li {}
 main #best .best_category .best_mainitem li a {}
@@ -97,10 +121,18 @@ main #best .best_category .best_sub .sub_item .swiper .swiper-button-prev {}
 main #best .best_category .best_sub .sub_item .swiper .swiper-button-next {}
 main #best .best_category .best_sub .sub_item .swiper .swiper-scrollbar {}
 /* main ============================= ranking */
-main #ranking {}
+main #ranking {display: none;}
 main #ranking .ranking_wrap {}
 main #ranking .ranking_wrap .ranking_title {}
 /* main ============================= time_sale */
+main #time_sale {display: none;}
 /* main ============================= video */
+main #video {display: none;}
 /* main ============================= category1 */
+main #category1 {display: none;}
 /* main ============================= subbnr */
+main #subbnr {display: none;}
+/* main ============================= category2 */
+main #category2 {display: none;}
+/* main ============================= category3 */
+main #category3 {display: none;}
