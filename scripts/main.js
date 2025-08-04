@@ -105,3 +105,16 @@ bestLi.forEach((tab,idx)=>{
         contents[idx].style.display = 'block';
     })
 })
+
+/* 타임특가 swiper*/
+const timeSaleSwiper = new Swiper('#time_swiper', { 
+    slidesPerView:3,
+    spaceBetween:20,
+    autoplay:{delay:5000,},
+    speed:1000,
+    loop:true,
+    navigation:{
+        nextEl:'#timesale_right',
+        prevEl:'#timesale_left',
+    },
+})

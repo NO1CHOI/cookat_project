@@ -6,7 +6,6 @@
 
 #EB5500,#CCCCCC,#FFF8F4,#606060,
 
-
 */
 
 
@@ -86,7 +85,7 @@ main #best .best_category .best_title p img {
     width: 100px;
     margin: 0 auto;
 }
-main #best .best_category .best_title h2 {font-size: 2.188rem; margin:10px 0;}
+main #best .best_category .best_title h2 {font-size: 2.188rem; margin:10px 0;font-weight: 600;}
 main #best .best_category .best_title p span {font-size: 1.25rem;}
 main #best .best_category .best_mainitem {
     display:flex;
@@ -120,9 +119,9 @@ main #best .best_category .best_mainitem li a.reward {background-image: url(../i
 /* best 카테고리 이미지 변경 */
 main #best .best_category .best_mainitem li.active a.ranking {background-image: url(../images/icon/best_ic_hot.gif);}
 main #best .best_category .best_mainitem li.active a.ranking span {color:#EB5500;}
-main #best .best_category .best_mainitem li.active a.cart {background-image: url(../images/icon/best_ic_price.gif);}
+main #best .best_category .best_mainitem li.active a.cart {background-image: url(../images/icon/best_ic_repurchase.gif);}
 main #best .best_category .best_mainitem li.active a.cart span {color:#EB5500;}
-main #best .best_category .best_mainitem li.active a.price {background-image: url(../images/icon/best_ic_repurchase.gif);}
+main #best .best_category .best_mainitem li.active a.price {background-image: url(../images/icon/best_ic_price.gif);}
 main #best .best_category .best_mainitem li.active a.price span {color:#EB5500;}
 main #best .best_category .best_mainitem li.active a.reward {background-image: url(../images/icon/best_ic_steady.gif);}
 main #best .best_category .best_mainitem li.active a.reward span {color:#EB5500;}
@@ -206,10 +205,10 @@ main #ranking .ranking_wrap .ranking_title p img {
     width: 100px;
     margin: 0 auto;
 }
-main #ranking .ranking_wrap .ranking_title h2 {font-size: 2.188rem; margin:10px 0;}
+main #ranking .ranking_wrap .ranking_title h2 {font-size: 2.188rem; margin:10px 0;font-weight: 600;}
 main #ranking .ranking_wrap .ranking_title p span {font-size: 1.25rem;}
 main #ranking .ranking_wrap .ranking_main_tab {
-    background-color: lightblue;
+    /* background-color: lightblue; */
     display:flex;
     flex-flow: row nowrap;
     justify-content: center;
@@ -239,7 +238,7 @@ main #ranking .ranking_wrap .ranking_main_tab li:first-child .ranking_sub_bg {di
 main #ranking .ranking_wrap .ranking_main_tab li .ranking_sub_bg {display: none;}
 main #ranking .ranking_wrap .ranking_main_tab li .ranking_sub_bg .ranking_sub {
     margin-top:70px;
-    background-color: lightblue;
+    /* background-color: lightblue; */
     position:absolute;
     left:-50%;
     width: 1320px;
@@ -247,10 +246,10 @@ main #ranking .ranking_wrap .ranking_main_tab li .ranking_sub_bg .ranking_sub {
     flex-flow: row wrap;
     justify-content: space-between;
 }
-main #ranking .ranking_wrap .ranking_main_tab li .ranking_sub_bg .ranking_sub > li {position: relative;}
+main #ranking .ranking_wrap .ranking_main_tab li .ranking_sub_bg .ranking_sub > li {position: relative; padding:0 0 30px 0;}
 main #ranking .ranking_wrap .ranking_main_tab li .ranking_sub_bg .ranking_sub > li .cart {
     position:absolute;
-    bottom:60px; right:20px;
+    bottom:120px; right:20px;
     z-index: 99;
 }
 main #ranking .ranking_wrap .ranking_main_tab li .ranking_sub_bg .ranking_sub > li .cart a {}
@@ -260,16 +259,18 @@ main #ranking .ranking_wrap .ranking_main_tab li .ranking_sub_bg .ranking_sub > 
 main #ranking .ranking_wrap .ranking_main_tab li .ranking_sub_bg .ranking_sub > li .item_wrap .thum a {}
 main #ranking .ranking_wrap .ranking_main_tab li .ranking_sub_bg .ranking_sub > li .item_wrap .thum a img {width: 100%;}
 main #ranking .ranking_wrap .ranking_main_tab li .ranking_sub_bg .ranking_sub > li .item_wrap .item_detail {}
-main #ranking .ranking_wrap .ranking_main_tab li .ranking_sub_bg .ranking_sub > li .item_wrap .item_detail a {}
+main #ranking .ranking_wrap .ranking_main_tab li .ranking_sub_bg .ranking_sub > li .item_wrap .item_detail a {text-align: left;}
 main #ranking .ranking_wrap .ranking_main_tab li .ranking_sub_bg .ranking_sub > li .item_wrap .item_detail a .title {}
-main #ranking .ranking_wrap .ranking_main_tab li .ranking_sub_bg .ranking_sub > li .item_wrap .item_detail a p {}
-main #ranking .ranking_wrap .ranking_main_tab li .ranking_sub_bg .ranking_sub > li .item_wrap .item_detail a p em {}
-main #ranking .ranking_wrap .ranking_main_tab li .ranking_sub_bg .ranking_sub > li .item_wrap .item_detail a span {}
+main #ranking .ranking_wrap .ranking_main_tab li .ranking_sub_bg .ranking_sub > li .item_wrap .item_detail a > p {padding:20px 0;}
+main #ranking .ranking_wrap .ranking_main_tab li .ranking_sub_bg .ranking_sub > li .item_wrap .item_detail a .detail_price {display: flex; gap:20px;}
+main #ranking .ranking_wrap .ranking_main_tab li .ranking_sub_bg .ranking_sub > li .item_wrap .item_detail a .detail_price span {font-weight: 600;color:#EB5500;font-size: 1.25rem;}
+main #ranking .ranking_wrap .ranking_main_tab li .ranking_sub_bg .ranking_sub > li .item_wrap .item_detail a .detail_price p {}
+main #ranking .ranking_wrap .ranking_main_tab li .ranking_sub_bg .ranking_sub > li .item_wrap .item_detail a .detail_price p em {font-weight: 600;font-size: 1.25rem;}
 main #ranking .ranking_wrap .more {}
 main #ranking .ranking_wrap .more a {
     /* background-color: yellowgreen; */
     position:absolute;
-    bottom:0;
+    bottom:50px;
     right:45%;
     z-index: 999;
     display: inline-block;
@@ -281,7 +282,7 @@ main #ranking .ranking_wrap .more a {
     border-radius: 50px;
 }
 /* main ============================= time_sale */
-main #time_sale {display: none;}
+main #time_sale {}
 /* main ============================= video */
 main #video {display: none;}
 /* main ============================= category1 */
