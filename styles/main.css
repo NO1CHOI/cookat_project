@@ -3,6 +3,7 @@
 18px = 1.125rem
 20px = 1.25rem
 35px = 2.188rem
+50px = 3.125rem
 
 #EB5500,#CCCCCC,#FFF8F4,#606060,
 
@@ -282,14 +283,293 @@ main #ranking .ranking_wrap .more a {
     border-radius: 50px;
 }
 /* main ============================= time_sale */
-main #time_sale {}
+main #time_sale {
+    text-align: center;
+    height: 1124px;
+}
+main #time_sale .time_wrap {}
+main #time_sale .time_wrap .time_title {margin-bottom:20px;}
+main #time_sale .time_wrap .time_title p {}
+main #time_sale .time_wrap .time_title p img {
+    display: block;
+    width: 100px;
+    margin: 0 auto;
+}
+main #time_sale .time_wrap .time_title h2 {font-size: 2.188rem; margin:10px 0;font-weight: 600;}
+main #time_sale .time_wrap .time_title p span {font-size: 1.25rem;}
+/* =================================================타임세일 타이머 */
+main #time_sale .time_wrap #timer {
+    font-size: 3.125rem;
+    font-weight: 100;
+    color: white;
+    padding-bottom: 100px;
+}
+main #time_sale .time_wrap #timer div {
+    display: inline-block;
+    min-width: 90px;
+    color:#EB5500;
+    padding: 15px;
+    background: #fff;
+    margin: 15px;
+    position:relative;
+}
+main #time_sale .time_wrap #timer div::after {
+    content:':';
+    display: inline-block;
+    color:#000;
+    font-size: 2.5rem;
+    position:absolute;
+    top:25px; right:-20px;
+}
+main #time_sale .time_wrap #timer div:last-child::after {display: none;}
+main #time_sale .time_wrap #timer div span {
+    color: #CCCCCC;
+    display: block;
+    margin-top: 15px;
+    font-size: .35em;
+    font-weight: 400;
+}
+main #time_sale .time_wrap .timer_container {position:relative;}
+main #time_sale .time_wrap .timer_container #time_swiper {width: 1320px; margin:0 auto;}
+main #time_sale .time_wrap .timer_container #time_swiper .swiper-wrapper {}
+main #time_sale .time_wrap .timer_container #time_swiper .swiper-wrapper .swiper-slide {}
+main #time_sale .time_wrap .timer_container #time_swiper .swiper-wrapper .swiper-slide .item_wrap {}
+main #time_sale .time_wrap .timer_container #time_swiper .swiper-wrapper .swiper-slide .item_wrap .thum {width: 400px;height: 400px;}
+main #time_sale .time_wrap .timer_container #time_swiper .swiper-wrapper .swiper-slide .item_wrap .thum a {}
+main #time_sale .time_wrap .timer_container #time_swiper .swiper-wrapper .swiper-slide .item_wrap .thum a img {width: 100%;}
+main #time_sale .time_wrap .timer_container #time_swiper .swiper-wrapper .swiper-slide .item_wrap .item_detail {padding-top:30px;}
+main #time_sale .time_wrap .timer_container #time_swiper .swiper-wrapper .swiper-slide .item_wrap .item_detail a {text-align:left;}
+main #time_sale .time_wrap .timer_container #time_swiper .swiper-wrapper .swiper-slide .item_wrap .item_detail a .title {font-size: 1.25rem;}
+main #time_sale .time_wrap .timer_container #time_swiper .swiper-wrapper .swiper-slide .item_wrap .item_detail a > span {display:block;margin:10px 0;}
+main #time_sale .time_wrap .timer_container #time_swiper .swiper-wrapper .swiper-slide .item_wrap .item_detail a span del {color:#949494;}
+main #time_sale .time_wrap .timer_container #time_swiper .swiper-wrapper .swiper-slide .item_wrap .item_detail a .detail_price {display: flex; gap:20px;}
+main #time_sale .time_wrap .timer_container #time_swiper .swiper-wrapper .swiper-slide .item_wrap .item_detail a .detail_price span {font-weight: 600;color:#EB5500;font-size: 1.25rem;}
+main #time_sale .time_wrap .timer_container #time_swiper .swiper-wrapper .swiper-slide .item_wrap .item_detail a .detail_price span p {}
+main #time_sale .time_wrap .timer_container #time_swiper .swiper-wrapper .swiper-slide .item_wrap .item_detail a .detail_price p em {font-weight: 600;font-size: 1.25rem;}
+main #time_sale .time_wrap .timer_container #timesale_left {
+    background-image: url(../images/icon/arrow.png);
+    transform:rotate(270deg);
+    width: 50px;
+    height: 50px;
+    left:200px;
+    top:250px;
+    z-index: 999;
+}
+main #time_sale .time_wrap .timer_container #timesale_left::after {display:none;}
+main #time_sale .time_wrap .timer_container #timesale_right {
+    background-image: url(../images/icon/arrow.png);
+    transform:rotate(90deg);
+    width: 50px;
+    height: 50px;
+    right:200px;
+    top:250px;
+}
+main #time_sale .time_wrap .timer_container #timesale_right::after {display:none;}
 /* main ============================= video */
-main #video {display: none;}
+main #video {
+    text-align: center;
+    width: 100%;
+    margin:0 auto;
+    height: 1077px;
+    background-color: #FFF8F4;
+}
+main #video .video_container {padding-top:100px;}
+main #video .video_container .video_title {margin:0 0 80px 0;}
+main #video .video_container .video_title h2 {font-size: 2.188rem; margin:10px 0;font-weight: 600;}
+main #video .video_container .video_title p {}
+main #video .video_container .video_title p span {font-size: 1.25rem;}
+main #video .video_container .video_wrap {
+    width: 1320px;
+    margin: 0 auto;
+    height: 550px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    background-color: #fff;
+    border: 1px solid #DEDEDE;
+    overflow: hidden;
+    border-radius: 10px;
+}
+main #video .video_container .video_wrap .video_left {width:700px;height:550px;}
+main #video .video_container .video_wrap .video_left iframe {width: 100%; height: 100%;}
+main #video .video_container .video_wrap .video_right {margin-right:53px;}
+main #video .video_container .video_wrap .video_right ul {
+    /* background-color: yellowgreen; */
+
+}
+main #video .video_container .video_wrap .video_right ul li {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 550px;
+    height: 150px;
+    /* background-color: lightcoral; */
+}
+main #video .video_container .video_wrap .video_right ul li:nth-child(2) {
+    /* background-color: yellowgreen; */
+    margin:35px 0;
+}
+main #video .video_container .video_wrap .video_right ul li .video_item {
+    display: flex;
+    flex-flow: row nowrap;
+}
+main #video .video_container .video_wrap .video_right ul li .video_item .small_thum {}
+main #video .video_container .video_wrap .video_right ul li .video_item .small_thum a {}
+main #video .video_container .video_wrap .video_right ul li .video_item .small_thum a img {}
+main #video .video_container .video_wrap .video_right ul li .video_item .product {
+    text-align: left;
+    margin-left:20px;
+}
+main #video .video_container .video_wrap .video_right ul li .video_item .product p {font-size: 1.25rem; margin:10px 0 51px 0;}
+main #video .video_container .video_wrap .video_right ul li .video_item .product del {color:#949494;}
+main #video .video_container .video_wrap .video_right ul li .video_item .product .price {margin-top:10px;}
+main #video .video_container .video_wrap .video_right ul li .video_item .product .price em {font-weight: 600;color:#EB5500;font-size: 1.25rem;}
+main #video .video_container .video_wrap .video_right ul li .video_item .product .price span {font-weight: 600;font-size: 1.25rem;}
+main #video .video_container .video_wrap .video_right ul li > a {}
+main #video .video_container .more {}
+main #video .video_container .more a {
+    display: inline-block;
+    background-color: #fff;
+    color:#222;
+    font-size: 1.125rem;
+    font-weight: 600;
+    padding:15px 65px;
+    border: 1px solid #E4E4E4;
+    border-radius: 50px;
+    margin-top:70px;
+}
 /* main ============================= category1 */
-main #category1 {display: none;}
+main #category1 {text-align: center;margin-top:100px;}
+main #category1 .category_title {margin: 30px 0 50px 0;}
+main #category1 .category_title h2 {font-size: 2.188rem; margin:10px 0;font-weight: 600;}
+main #category1 .category_title p {}
+main #category1 .category_title p span {font-size: 1.25rem;}
+main #category1 .cate_wrap {}
+main #category1 .cate_wrap ul {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 40px;
+    width: 1320px;
+    margin: 0 auto 76px;
+    justify-content: center;
+}
+main #category1 .cate_wrap ul li {width: 300px;}
+main #category1 .cate_wrap ul li .thum {width: 300px; height: 300px;}
+main #category1 .cate_wrap ul li .thum a {}
+main #category1 .cate_wrap ul li .thum a img {width:100%;}
+main #category1 .cate_wrap ul li .item_detail {margin-top:20px;}
+main #category1 .cate_wrap ul li .item_detail a {text-align: left;}
+main #category1 .cate_wrap ul li .item_detail a .title {font-size: 1.125rem;}
+main #category1 .cate_wrap ul li .item_detail a > span {display:block;margin:10px 0;}
+main #category1 .cate_wrap ul li .item_detail a > span del {color:#949494;}
+main #category1 .cate_wrap ul li .item_detail a .detail_price {display: flex; gap:20px;}
+main #category1 .cate_wrap ul li .item_detail a .detail_price span {font-weight: 600;color:#EB5500;font-size: 1.25rem;}
+main #category1 .cate_wrap ul li .item_detail a .detail_price p {}
+main #category1 .cate_wrap ul li .item_detail a .detail_price p em {font-weight: 600;font-size: 1.25rem;}
+main #category1 .more {}
+main #category1 .more a {
+    z-index: 999;
+    display: inline-block;
+    color:#222;
+    font-size: 1.125rem;
+    font-weight: 600;
+    padding:15px 65px;
+    border: 1px solid #E4E4E4;
+    border-radius: 50px;
+}
 /* main ============================= subbnr */
-main #subbnr {display: none;}
+main #subbnr {
+    width: 100%;
+    display: flex;
+    justify-content: center;  /* 가로 중앙정렬 */
+    align-items: center;       /* 세로 중앙정렬 */
+    height:400px;             /* 필요시 높이 설정 */
+    background-color: #f5f5f5; /* 배경색은 원하는 대로 설정 */
+    margin:100px 0 100px 0;
+}
+main #subbnr .sub_bnr {}
+main #subbnr .sub_bnr a {}
+main #subbnr .sub_bnr a img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
 /* main ============================= category2 */
-main #category2 {display: none;}
+main #category2 {text-align: center;margin-top:100px;}
+main #category2 .category_title {margin: 30px 0 50px 0;}
+main #category2 .category_title h2 {font-size: 2.188rem; margin:10px 0;font-weight: 600;}
+main #category2 .category_title p {}
+main #category2 .category_title p span {font-size: 1.25rem;}
+main #category2 .cate_wrap {}
+main #category2 .cate_wrap ul {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 40px;
+    width: 1320px;
+    margin: 0 auto 76px;
+    justify-content: center;
+}
+main #category2 .cate_wrap ul li {width: 300px;}
+main #category2 .cate_wrap ul li .thum {width: 300px; height: 300px;}
+main #category2 .cate_wrap ul li .thum a {}
+main #category2 .cate_wrap ul li .thum a img {width:100%;}
+main #category2 .cate_wrap ul li .item_detail {margin-top:20px;}
+main #category2 .cate_wrap ul li .item_detail a {text-align: left;}
+main #category2 .cate_wrap ul li .item_detail a .title {font-size: 1.125rem;}
+main #category2 .cate_wrap ul li .item_detail a > span {display:block;margin:10px 0;}
+main #category2 .cate_wrap ul li .item_detail a > span del {color:#949494;}
+main #category2 .cate_wrap ul li .item_detail a .detail_price {display: flex; gap:20px;}
+main #category2 .cate_wrap ul li .item_detail a .detail_price span {font-weight: 600;color:#EB5500;font-size: 1.25rem;}
+main #category2 .cate_wrap ul li .item_detail a .detail_price p {}
+main #category2 .cate_wrap ul li .item_detail a .detail_price p em {font-weight: 600;font-size: 1.25rem;}
+main #category2 .more {}
+main #category2 .more a {
+    z-index: 999;
+    display: inline-block;
+    color:#222;
+    font-size: 1.125rem;
+    font-weight: 600;
+    padding:15px 65px;
+    border: 1px solid #E4E4E4;
+    border-radius: 50px;
+}
 /* main ============================= category3 */
-main #category3 {display: none;}
+main #category3 {text-align: center; margin:100px 0 100px 0;}
+main #category3 .category_title {margin: 30px 0 50px 0;}
+main #category3 .category_title h2 {font-size: 2.188rem; margin:10px 0;font-weight: 600;}
+main #category3 .category_title p {}
+main #category3 .category_title p span {font-size: 1.25rem;}
+main #category3 .cate_wrap {}
+main #category3 .cate_wrap ul {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 40px;
+    width: 1320px;
+    margin: 0 auto 76px;
+    justify-content: center;
+}
+main #category3 .cate_wrap ul li {width: 300px;}
+main #category3 .cate_wrap ul li .thum {width: 300px; height: 300px;}
+main #category3 .cate_wrap ul li .thum a {}
+main #category3 .cate_wrap ul li .thum a img {width:100%;}
+main #category3 .cate_wrap ul li .item_detail {margin-top:20px;}
+main #category3 .cate_wrap ul li .item_detail a {text-align: left;}
+main #category3 .cate_wrap ul li .item_detail a .title {font-size: 1.125rem;}
+main #category3 .cate_wrap ul li .item_detail a > span {display:block;margin:10px 0;}
+main #category3 .cate_wrap ul li .item_detail a > span del {color:#949494;}
+main #category3 .cate_wrap ul li .item_detail a .detail_price {display: flex; gap:20px;}
+main #category3 .cate_wrap ul li .item_detail a .detail_price span {font-weight: 600;color:#EB5500;font-size: 1.25rem;}
+main #category3 .cate_wrap ul li .item_detail a .detail_price p {}
+main #category3 .cate_wrap ul li .item_detail a .detail_price p em {font-weight: 600;font-size: 1.25rem;}
+main #category3 .more {}
+main #category3 .more a {
+    z-index: 999;
+    display: inline-block;
+    color:#222;
+    font-size: 1.125rem;
+    font-weight: 600;
+    padding:15px 65px;
+    border: 1px solid #E4E4E4;
+    border-radius: 50px;
+}
