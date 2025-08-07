@@ -8,8 +8,6 @@ document.querySelectorAll('a').forEach(function(link) {
 });
 
 
-/* gnb lnb  */
-
 /* 메인배너 Swiper */
 const bnrSwiper = new Swiper('#bnr_swiper', { 
     slidesPerView:3,
@@ -73,6 +71,30 @@ const bestTopranking = new Swiper('#best_topranking',{
         prevEl:'#topranking_prev',
     },
 })
+
+/* 맛로그 li 변경*/
+const rankingItem = document.querySelectorAll('.ranking_main_tab li')
+/* 맛로그 카테고리 변경 */
+const rankingContents = document.querySelectorAll('.ranking_sub_bg')
+console.log(rankingContents)
+
+
+rankingItem.forEach(ranking=> {
+    ranking.addEventListener('click',()=>{
+        //카테고리 변경
+        rankingItem.forEach(list => list.classList.remove('active'))
+        ranking.classList.add('active');
+        rankingContents.forEach(content => content.classList.remove('active'))
+        // 현재 클릭한 li 안의 .ranking_sub_bg 에만 active 추가
+        const subBg = ranking.querySelector('.ranking_sub_bg');
+        if (subBg) {
+        subBg.classList.add('active');
+        }
+    });
+});
+
+
+
 
 /* .active 이동하기 이미지 변경 */
 const items = document.querySelectorAll('.best_mainitem li');

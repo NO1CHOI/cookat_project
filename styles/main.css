@@ -213,8 +213,9 @@ main #ranking .ranking_wrap .ranking_main_tab {
     display:flex;
     flex-flow: row nowrap;
     justify-content: center;
+    position: relative;
 }
-main #ranking .ranking_wrap .ranking_main_tab > li {position: relative;}
+main #ranking .ranking_wrap .ranking_main_tab > li {}
 main #ranking .ranking_wrap .ranking_main_tab > li.active > a {color:#fff;background-color: #EB5500;}
 main #ranking .ranking_wrap .ranking_main_tab > li:first-child a {
     border-top-left-radius: 10px;
@@ -235,13 +236,14 @@ main #ranking .ranking_wrap .ranking_main_tab > li > a {
     line-height: 70px;
     color:#939393;
 }
-main #ranking .ranking_wrap .ranking_main_tab li:first-child .ranking_sub_bg {display: block;}
 main #ranking .ranking_wrap .ranking_main_tab li .ranking_sub_bg {display: none;}
+/* 개별선택자 */
+main #ranking .ranking_wrap .ranking_main_tab li .ranking_sub_bg.active {display: block;}
 main #ranking .ranking_wrap .ranking_main_tab li .ranking_sub_bg .ranking_sub {
     margin-top:70px;
     /* background-color: lightblue; */
     position:absolute;
-    left:-50%;
+    left:16%;
     width: 1320px;
     display: flex;
     flex-flow: row wrap;
