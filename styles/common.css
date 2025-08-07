@@ -72,6 +72,10 @@ header nav .gnb {
     padding: 10px 0;
 }
 header nav .gnb li {position:relative;}
+header nav .gnb li a:hover {
+    color:#EB5500;
+    transition:all 0.5s;
+}
 header nav .gnb li a {
     font-size:1.125rem; font-weight: 600;
     display: flex;
