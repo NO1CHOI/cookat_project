@@ -7,6 +7,9 @@ document.querySelectorAll('a').forEach(function(link) {
     });
 });
 
+
+/* gnb lnb  */
+
 /* 메인배너 Swiper */
 const bnrSwiper = new Swiper('#bnr_swiper', { 
     slidesPerView:3,
